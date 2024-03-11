@@ -9,6 +9,8 @@
 
 html, body {
   color: var(--white);
+  background-image: url('/assets/images/background.png');
+  /* background-image: url('https://aionarae.github.io/aiona-personal-portfolio/assets/images/background.jpg'); */
 }
 
 header nav {

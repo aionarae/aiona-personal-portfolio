@@ -1,0 +1,155 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: none;
+  font-style: normal;
+}
+
+html, body {
+  color: var(--white);
+}
+
+header nav {
+  position: relative;
+  top: 0;
+  right: 100px;
+  width: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-end;
+  z-index: 1;
+  margin-bottom: 90px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav a {
+  font-size: 30px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 350;
+}
+
+/* This shows an underline if users hove over the link */
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.aiona-portrait {
+  position: relative;
+  width: 500px; /* Initial width */
+  height: 35px; /* Initial height */
+  left: 65%;
+  top: 10%;
+}
+
+.about-me {
+  position: relative;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+  height: 300%;
+}
+
+.about-me h1,
+.about-me h2{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me h2 {
+  color: var(--purple);
+}
+
+.about-me p {
+  /* word-wrap: break-word;  */
+  /* Fallback for older browsers display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  /* overflow-wrap: break-word;  */
+  /* For newer browsers */
+  /* margin: 2% 0;
+  margin-top: 10px; */
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  top: auto;
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  position: relative;
+  top: auto;
+  height: 100px;
+  background-color: rgba(200, 255, 255, 0.5);
+}
+
+footer span {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer ul {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 25px;
+}
+
+/* this will re-adjust the when the size  */
+@media screen and (max-width: 992px) {
+  nav a {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  .about-me {
+    position: absolute;
+    z-index: 1;
+    top: 10%; /* Position at the vertical center */
+    left: 5%; /* Position at the horizontal center */
+  }
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav a {
+    font-size: 10px;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: flex;
+    align-items: end;
+  }
+
+  nav a {
+    font-size: 8px;
+  }
+}

@@ -11,16 +11,6 @@ html, body {
 
 }
 
-body {
-  background-image: url("/assets/images/background-image.png");
-  background-size: cover; 
-  /* Cover the entire viewport */
-  background-position: center; 
-  /* Center the background image */
-  background-repeat: no-repeat; 
-  /* Do not repeat the background image */
-  height: 100vh;
-}
 
 h1 {
   font-size: 500%;

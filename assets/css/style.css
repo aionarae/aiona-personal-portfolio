@@ -26,7 +26,7 @@ html, body {
 /* } */
 
 body {
-  background-image: url("./assets/images/background-image.png");
+  background-image: url("https://aionarae.github.io/aiona-personal-portfolio/assets/images/background-image.png");
   background-size: cover; 
   /* Cover the entire viewport */
   background-position: center; 

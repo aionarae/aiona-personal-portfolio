@@ -9,8 +9,20 @@
 
 html, body {
   color: var(--white);
-  background-image: url('/assets/images/background.png');
+  /* background-image: url('/assets/images/background.png'); */
   /* background-image: url('https://aionarae.github.io/aiona-personal-portfolio/assets/images/background.jpg'); */
+}
+
+/* #background { */
+  /* background-size: cover;  */
+  /* Cover the entire viewport */
+  /* background-position: center;  */
+  /* Center the background image */
+  /* background-repeat: no-repeat;  */
+  /* Do not repeat the background image */
+  /* height: 100vh;
+  width: 100%;  */
+
 }
 
 header nav {

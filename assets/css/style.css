@@ -1,136 +1,186 @@
-:root {
-  --white:#fff;
-  --purple: #987EEE;
-}
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: none;
-  font-style: normal;
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: 'Montserrat';
-  color: var(--white);
-  /* margin: 0; */
-  overflow-x: hidden;
-}
-
 body {
   /* background-image: url("https://aionarae.github.io/aiona-personal-portfolio/assets/images/background-image.png"); */
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
   min-height: 100vh;
-  background-color:#191334;
+  background-color: var(--dark-purple);
 }
 
 header {
-  width: auto;
-  border: 2px dotted chocolate;
+  width: 99%;
+  z-index:1;
+  position: absolute;
+  /* border: 2px dotted rgb(30, 300, 201); */
 }
 
 header nav {
-  border: 2px dotted rgb(30, 210, 201);
+  /* border: 2px dotted rgb(30, 210, 201); */
   position: relative;
   top: 0;
-  width: auto;
-  display: flex;
-  /* align-items: center; */
-  justify-content: flex-end;
-  z-index: 1;
-  margin-bottom: 90px;
+  /* display: flex; 
+  flex-direction: column;  */
+  padding: 20px 50px 0 0;
 }
 
-nav ul {
-  border: 2px dotted var(--purple);
-  display: flex;
-  /* align-items: center; */
+header nav ul {
+  position: relative;
+  /* border: 2px dotted var(--purple); */
+  display: flex; 
   flex-direction: row;
+  justify-content: flex-end;
 }
 
-nav a {
-  border: 2px dotted var(--white);
-  font-size: 30px;
+header nav a {
+  /* border: 2px dotted var(--white); */
+  font-size: 180%;
   color: var(--white);
   text-decoration: none;
   font-weight: 350;
 }
 
 /* This shows an underline if users hove over the link */
-nav a:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
 section {
-  border: 2px dotted rgb(97, 21, 21));
   display: flex;
   flex-direction: column;
   width: auto;
 }
 
 .aiona-portrait {
-  border: 2px dotted var(--white);
   position: relative;
-  width: 500px; /* Initial width */
-  height: 35px; /* Initial height */
-  left: 65%;
-  top: 10%;
+  /* width: auto; */
+  /* left: 65%; */
+  /* top: 10%; */
 } 
 
-.about-me {
-  /* width: auto; */
-  border: 2px dotted var(--white);
+#aiona-portrait {
+  /* border: 2px dotted #f2ff00); */
   position: relative;
-  height: 500px;
+  width: 500px; /* Initial width */
+  min-height: 100%;
+  left: 60%;
+  padding-top: 10%;
+}
+
+#about-me {
+  /* border: 2px dotted var(--white); */
+  position: relative;
+  height: auto;
 }
 
 #about-me-portrait {
-  min-width: 100&;
+  position: relative;
+  min-width: 100%;
+  top: 0;
+  height: auto;
 }
 
-.about-me h1,
-.about-me h2{
+.text {
+  position: absolute;
+  /* border: 2px dotted rgb(142, 30, 107); */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 600px; */
+  height: 50%;
+  /* padding-top:170px; */
+  padding-top: 13%
+}
+
+#about-me h2 {
+  color: transparent;
+  display: none;
+}
+
+#about-me h1,
+#about-me h3,
+#project h2 {
+  position: relative;
+  padding-left: 8%;
+  text-align: left;
+}
+
+#about-me h1 {
+  /* border: 2px dotted hsl(195, 71%, 47%); */
+  padding-top: 5%;
   margin: 0;
-  display: flex;
-  justify-content: center;
 }
 
-.about-me h2 {
+#about-me h3 {
   color: var(--purple);
+  /* border: 2px dotted hsl(195, 71%, 47%); */
+  margin: 0px;
 }
 
-.about-me p {
-  display: flex;
-  justify-content: center;
+#about-me p {
+  /* border: 2px dotted #391ed2; */
+  position: relative;
   text-align: left;
   text-wrap: wrap;
+  white-space: normal;
+  padding: 2% 40% 0 8%;
+  margin: 0;
+  /* display: flex;
+  justify-content: center; */
+  /* text-align: left;
+  text-wrap: wrap; */
 }
 
-.project {
+#project {
+  position: relative;
+  height: auto;
+  /* border: 2px dotted var(--white); */
+  /* background-color:rgba(255, 255, 255, 0.557); */
+  margin: 0;
+}
+
+#h2-project {
   position: relative;
   /* width: 100%; */
-  height: 1000px;
-  border: 2px dotted var(--white);
-  background-color:rgba(255, 255, 255, 0.5);
+  /* border: 2px dotted hsl(195, 71%, 47%); */
+}
+
+.canhelp figure {
+  /* border: 2px dotted #352ac8; */
+
+}
+
+.canhelp a {
+  /* border: 2px dotted #2ac889; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#canhelp-img {
+  position: relative;
+  width: 85%;
+  height: 50%;
+}
+
+#h3-project{
+  position: absolute;
+  padding: 45% 0% 0 15%;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  text-decoration: underline;
 }
 
 footer {
   position: relative;
   bottom: 0px;
-  /* top: auto; */
-  height: 100px;
-  border: 2px solid yellow;
-  background-color: rgba(200, 255, 255, 0.5);
+  height: 20%;
+  /* border: 2px solid yellow; */
 }
 
-footer span {
-  border: 2px dotted orange);
+#contact-me {
+  color: transparent;
+  /* border: 2px dotted orange); */
   position: relative;
   bottom: 0px;
   display: flex;
@@ -138,65 +188,191 @@ footer span {
 }
 
 footer ul {
-  border: 2px dotted chocolate;
+  /* border: 2px dotted chocolate; */
   position: relative;
   bottom: 0px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding: 0;
 }
 
 footer a {
-  border: 2px dotted rgb(97, 21, 21);
+  /* border: 2px dotted rgb(97, 21, 21); */
   font-size: 25px;
   color: var(--white);
   text-decoration: none;
 }
 
-/* this will re-adjust the when the size  */
-/* @media screen and (max-width: 992px) {
-  nav a {
-    font-size: 10px;
+/* this will re-adjust the when the screen size hits 992px  */
+@media screen and (max-width: 1024px) {
+
+  header nav a {
+    font-size: 150%;
   }
 
-  h1 {
+  .text {
+    position: absolute;
+    /* border: 2px dotted rgb(142, 30, 107); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    padding-top: 15%;
+  }
+  
+  #about-me h1 {
     font-size: 250%;
   }
-
-  h2 {
-    font-size: 200%;
+    
+  #about-me h3 {
+    font-size: 155%;
+  }
+    
+  #about-me p {
+    font-size: 60%;
   }
 
-  .about-me {
-    position: absolute;
-    z-index: 1;
-    top: 10%;
-    left: 5%; 
-  } */
+  #h2-project {
+    font-size: 200%;
 
-/* Large smartphones - navbar changes color */
+  }
+
+  #h3-project {
+    font-size: 150%;
+  }
+}
+
+/* Large smartphones */
 @media screen and (max-width: 768px) {
-  /* nav a {
-    font-size: 10px;
-  } */
+
+  header nav a {
+    font-size: 75%;
+  }
+
+  .text {
+    position: absolute;
+    /* border: 2px dotted rgb(142, 30, 107); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12%;
+    padding-top:10%;
+  }
+  
+  #about-me h1 {
+    font-size: 125%;
+  }
+    
+  #about-me h3 {
+    font-size: 80%;
+  }
+    
+  #about-me p {
+    font-size: 30%;
+  }
+
+  #h2-project {
+    font-size: 100%;
+
+  }
+
+  #h3-project {
+    font-size: 80%;
+  }
+
+  footer a {
+    font-size: 90%;
+  }
+
 } 
 
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
+  header nav a {
+    font-size: 75%;
+  }
   header {
+    position:relative;
     display: flex;
     justify-content: center;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  nav a {
-    color: red;
-    width: 100%;s
+    /* border: 2px dotted rgb(30, 210, 201); */
   }
 
- 
+  .text {
+    position: absolute;
+    /* border: 2px dotted rgb(142, 30, 107); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 6%;
+    padding-top: 2%;
+  }
+  
+  #about-me h1 {
+    font-size: 60%;
+  }
+    
+  #about-me h3 {
+    font-size: 40%;
+  }
+    
+  #about-me p {
+    font-size: 10%;
+  }
+
+  #h2-project {
+    font-size: 50%;
+  }
+
+  #h3-project {
+    font-size: 20%;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+  header {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    font-size: 65%;
+    /* border: 2px dotted rgb(30, 210, 201); */
+  }
+
+  header nav {
+    position: relative;
+    width: 100%;
+    /* border: 2px dotted #adff2f; */
+  }
+
+  header nav ul {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* border: 2px dotted green; */
+    width: 100%;
+  }
+
+  header nav a {
+    position: relative;
+    width: auto;
+    /* border: 2px dotted rgb(300, 210, 201); */
+  }
+
+  #h3-project {
+    padding: 40% 0% 0 25%;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+    display: flex;
+    /* flex-direction: column; */
+    font-size: 60%;
+    align-content: center;
+    text-align: center;
+    bottom: 0;
+  }
 }

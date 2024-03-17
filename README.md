@@ -7,3 +7,6 @@ This is my personal portfolio made for the 2nd challenge.
 
 # Link to deployed application
 https://aionarae.github.io/aiona-personal-portfolio
+
+# Code Source
+I used ChatGPT to clean up my code.
